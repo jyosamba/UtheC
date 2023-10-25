@@ -18,5 +18,12 @@ public class BookServices {
         return booksList;
     }
 
+    public List<BooksEntity> findBooksbyAuthorID(int authorID){
+        //Retrieving Books depending on a specific Author
+        List<BooksEntity> bookList = RepoB.findByAuthorAuthorIDAndHardcover(authorID,true);
+        bookList.addAll(RepoB.findByAuthorAuthorIDAndHardcover(authorID, false));
+        return bookList;
+    }
+
 
 }

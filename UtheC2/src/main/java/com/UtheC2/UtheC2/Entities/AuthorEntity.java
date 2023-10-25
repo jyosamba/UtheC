@@ -6,7 +6,7 @@ import java.awt.print.Book;
 import java.util.List;
 
 @Entity
-@Table(name = "Author")
+@Table(name = "authors")
 public class AuthorEntity {
     @Column(name="name")
     private String name;

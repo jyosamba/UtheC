@@ -1,30 +1,21 @@
 package com.UtheC2.UtheC2.Entities;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name="Users")
 public class UserEntity {
-    public int getUserID() {
-        return userID;
-    }
-
-    public void setUserID(int userID) {
-        this.userID = userID;
-    }
 
     @Id
-    int userID;
-
     @Column(name="UserName")
     private String UserName;
 
     @Column(name="pwd")
     private String pwd;
 
-    //@OneToOne
-    //@JoinColumn(name="customerID")
-    //private CustomersEntity customers;
+    @OneToOne
+    @JoinColumn(name="customerID")
+    private CustomersEntity customers;
 
     public String getUserName() {
         return UserName;
@@ -42,12 +33,12 @@ public class UserEntity {
         this.pwd = pwd;
     }
 
-//    public CustomersEntity getCustomers() {
-//        return customers;
-//    }
-//
-//    public void setCustomers(CustomersEntity customers) {
-//        this.customers = customers;
-//    }
+    public CustomersEntity getCustomers() {
+        return customers;
+    }
+
+    public void setCustomers(CustomersEntity customers) {
+        this.customers = customers;
+    }
 
 }

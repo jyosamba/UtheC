@@ -9,7 +9,7 @@ public interface BooksRepo extends JpaRepository<BooksEntity,Integer> {
     //For GenreController to get books by GenreID
     List<BooksEntity> findByGenreGenreID(int genreID);
 
-    //For AuthorController to get books by authorName
-    List<BooksEntity> findByAuthorAuthorID(int authorID);
+    //For AuthorController to get books by authorID
+    List<BooksEntity> findByAuthorAuthorIDAndHardcover(int authorID,boolean hardcover);
 
 }
