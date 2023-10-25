@@ -17,7 +17,7 @@ public class BooksEntity {
     @Column(name="title")
     private String title;
     @Column(name="issue")
-    private int issue;
+    private Integer issue=1;
     @Column(name="isbn")
     private String isbn;
 
@@ -38,7 +38,7 @@ public class BooksEntity {
     private PublishersEntity publisher;
 
     @OneToOne
-    //@JoinColumn(name="genreID")
+    @JoinColumn(name="genreID")
     private GenresEntity genre;
 
     private int quantity;
@@ -85,11 +85,11 @@ public class BooksEntity {
         this.title = title;
     }
 
-    public int getIssue() {
+    public Integer getIssue() {
         return issue;
     }
 
-    public void setIssue(int issue) {
+    public void setIssue(Integer issue) {
         this.issue = issue;
     }
 
