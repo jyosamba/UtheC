@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/UtheC2.iml" filepath="$PROJECT_DIR$/.idea/UtheC2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/UtheC.iml" filepath="$PROJECT_DIR$/.idea/UtheC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UtheC2/UtheC2.iml" filepath="$PROJECT_DIR$/UtheC2/UtheC2.iml" />
     </modules>
   </component>
 </project>

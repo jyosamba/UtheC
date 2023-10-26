@@ -25,5 +25,17 @@ public class BookServices {
         return bookList;
     }
 
+    public List<BooksEntity> getAllBooks(){
+        List<BooksEntity> booksList = RepoB.findAll();
+
+        return booksList;
+    }
+
+    public List<BooksEntity> getBookBybookID(int bookID){
+        List<BooksEntity> booksList = RepoB.findBookBybookID(bookID);
+
+        return booksList;
+    }
+
 
 }
