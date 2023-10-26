@@ -37,6 +37,6 @@ public class UserController {
     UserRepo RepoU;
 
     @GetMapping("/user")
-    public String method(){ return "";}
+    public String method(){ return null;}
 
 }
