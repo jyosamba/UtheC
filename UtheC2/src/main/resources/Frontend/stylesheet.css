@@ -1,0 +1,259 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(14, 23, 23);
+    cursor: url('Images/ghostCursor.png');
+}
+
+body{
+    background-color: #A4E6E6;
+    margin: auto;
+    justify-content: center;
+}
+
+button{
+    background-color: red;
+    color:#A4E6E6;
+    border-radius: 15px;
+    width: 100px;
+    height: 30px;
+    
+}
+
+button:hover{
+    background-color: #070C44;
+    cursor: pointer;
+}
+
+div{
+    visibility: visible;
+}
+
+
+
+footer {
+    min-height: 100px;
+    padding: 10px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+footer, header{
+    background-color: #070C44;
+}
+
+header{
+    min-height: 100px;
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    text-align: left;
+    z-index: 10;
+}
+
+i{
+    color: #A4E6E6;
+    margin: 5px;
+    padding: 10px;
+    width: 10px;
+    font-size: xx-large;
+}
+
+i:hover{
+    cursor: pointer;
+    color: rgba(250, 0, 58, 1);
+}
+
+section {
+    visibility: visible;
+    padding: 10px;
+    margin: auto;
+}
+
+
+.allBooks-gridContainer{
+    display: grid;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.allBooks-gridItem{
+    height: 10px;
+    width: 10px;
+    background-color:  rgba(255, 255, 255, 0.75);
+    margin: auto;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.checkoutDiv1{
+    background-color:  rgba(255, 255, 255, 0.75);
+    margin: auto;
+    padding: 10px;
+    width: 80%;
+    height: 300px;
+    border-radius: 25px;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.homeSecDiv {
+    width: 95%;
+    background-color: rgba(255, 255, 255, 0.75);
+    margin: auto;
+    padding: 12px;
+    border-radius: 25px;
+}
+
+.labelLogin{
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.loginBox{
+    background-color: rgba(255, 255, 255, 0.75);
+    width: 400px;
+    height: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px;
+    border-radius: 25px;
+    justify-content: center;
+}
+
+.loginSpacer1{
+    height: 10px;
+    visibility: hidden;
+}
+
+.mainBody {
+    margin-top: 150px;
+    margin-bottom: 10px;
+}
+
+.newRelease {
+    box-shadow: 7px 7px 2px rgba(0, 0, 0, 0.5);
+
+}
+
+.newRelease:hover{
+    box-shadow: 7px 7px 2px rgba(250, 0, 58, 0.8);
+    cursor: pointer;
+    width: 200;
+    height: 293;
+    
+
+}
+
+.searchBar{
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.singleBook{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(255, 255, 255, 0.75);
+    width: 95%;
+    margin: auto;
+    padding: 15px;
+    border-radius: 25px;
+
+}
+
+.singleBookSpacer{
+    width: 200px;
+    visibility: hidden;
+}
+
+.slideshow {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    position: relative;
+    justify-content: center;
+}
+
+.slideshowSpacer {
+    width: 50px;
+    visibility: hidden;
+}
+
+.spacer {
+    visibility: hidden;
+}
+
+.topnav {
+    position: fixed;
+    right: 0;
+    top: 10;
+    padding: 10px;
+}
+
+#homeSec1 {
+    text-align: left;
+}
+
+#homeSec2 {
+    text-align: center;
+}
+
+#homeSec3 {
+    text-align: right;
+}
+
+#homeSecDiv1{
+    display: flex;
+    flex-direction: row;
+
+}
+
+#homeSecDiv11{
+    justify-content: center;
+}
+
+#homeSecDiv3{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#homeSpacer1{
+    width:20%;
+}
+
+#hsd3lotr{
+    border-radius: 25px;
+}
+
+#hsd3Spacer{
+    width: 400px;
+    visibility: hidden;
+}
+
+#luckydip{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    z-index: 5;
+    justify-self: center;
+    
+}
+
+#slideshowBottomSpacer{
+    height: 10px;
+}
+
+#wow {
+    justify-content: right;
+    border-radius: 25px;
+}
+
+ 

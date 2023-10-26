@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Under the Covers - Checkout Page</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Book e-commerce site, checkout page.">
+        <meta name="keywords" content="Book, Shop, Buy, Fiction, Novel">
+        <meta name="author" content="The best team">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stylesheet.css"/>
+        <link rel="script" href="Script.js"/>
+        <script src="https://kit.fontawesome.com/b6bf6586dc.js" crossorigin="anonymous"></script>
+        
+    </head>
+    <body>
+        <!--Header -->
+        <header class="flex-container">
+            <img id="headerLogo" src="Images/logo.png" alt="Full logo" width="200" height="130">
+            <div class="topnav">
+                <input class="searchBar" type="text" placeholder="Search..">
+                <i class="fa fa-search"></i>
+                <a name="#login" href="LoginPage.html"><i id="loginButton" class="fas fa-ghost"></i></a>
+                <a class="active" name="#HomePage" href="HomePage.html"><i class="fas fa-home"></i></a>
+                <a name="#CheckoutPage" href="CheckoutPage.html"><i class="fas fa-shopping-bag"></i></a>
+                <a name="#menu"><i class="fas fa-list-alt"></i></a>
+              </div>
+
+        </header>
+        <br>
+        <!-- Main Body -->
+        <div class="mainBody">
+            <div class="loginBox">
+                <h2>Login</h2>
+                <img src="Images/logoGhost.png" width="70" height="100">
+                <form id="loginForm">
+                    <label class="labelLogin">Username</label>
+                    <input class="labelLogin" type="text" placeholder="Username" name="username" required>
+                    <br>
+                    <div class="loginSpacer1"></div>
+                    <label class="labelLogin">Password</label>
+                    <input class="labelLogin" type="text" placeholder="password" name="password" required>
+                    <br>
+                    <button>Submit</button>
+                    <br>
+                </form>
+                <h6>Don't have an account yet?</h6>
+                    <button id="goToSignUp" onclick="window.location.href = 'SignUpPage.html'">Sign Up</button>
+            </div>
+        </div>
+        <br>
+        <!-- Footer -->
+        <footer>
+
+        </footer>
+    </body>
+</html>
