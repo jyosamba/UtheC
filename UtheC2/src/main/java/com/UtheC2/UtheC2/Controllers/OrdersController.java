@@ -22,7 +22,7 @@ public class OrdersController {
         List<OrdersEntity> ordersList = ordersService.getAllOrders();
 
         if(ordersList.isEmpty()){
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("No books found");
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("No orders found");
         }
 
         return ResponseEntity.ok(ordersList);
