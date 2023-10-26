@@ -12,7 +12,7 @@ public class CustomerServices {
 
     public List<CustomersEntity> findDOBbyCustomerID(int customerID){
         //Retrieving DOB depending on a specific Customer
-        List<CustomersEntity> DOBList = RepoC.findByCustomersCustomersID(customerID);
+        List<CustomersEntity> DOBList = RepoC.findByCustomerID(customerID);
         return DOBList;
     }
 

@@ -53,7 +53,7 @@ public class UserController {
     //1. find customerid from user <<-- up to here
     //2. find customer from customerid
     @GetMapping("/customerInfo")
-    public CustomersEntity findCustomerByUsername(@PathVariable UserEntity user){
+    public CustomersEntity findUserByUsername(@PathVariable UserEntity user){
         int custID = usersServices.getCustomerIdFromUser(user.getUserName(), user.getPwd());
         //2: plug in custID
         return null;

@@ -19,8 +19,15 @@ public class UsersServices {
     private UserRepo RepoU;
 
     public int getCustomerIdFromUser(String username, String password){
-        UserEntity user = RepoU.findUser(username, password);
+        UserEntity user = RepoU.findUserByuserName(username);
         return user.getCustomers().getCustomerID();
+    }
+
+    public UserEntity findUserByuserName(String username, String password){
+       // List<OrdersEntity> ordersList = RepoO.findOrderByOrderID(orderID);
+        //UserEntity myUser = RepoU.findUserByuserName(username, password);
+        UserEntity myUser = RepoU.findUserByuserName("root");
+        return myUser;
     }
 
 

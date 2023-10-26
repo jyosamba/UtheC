@@ -39,8 +39,9 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/User/Documents/lessons/UtheC"
+    "last_opened_file_path": "C:/Users/james/IdeaProjects/QA/UtheC/UtheC2"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -76,8 +77,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1698317848505</updated>
+      <workItem from="1698330226648" duration="51000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

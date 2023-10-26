@@ -8,7 +8,7 @@ public class UserEntity {
 
     @Id
     @Column(name="UserName")
-    private String UserName;
+    private String userName;
 
     @Column(name="pwd")
     private String pwd;
@@ -18,11 +18,11 @@ public class UserEntity {
     private CustomersEntity customers;
 
     public String getUserName() {
-        return UserName;
+        return userName;
     }
 
     public void setUserName(String userName) {
-        UserName = userName;
+        userName = userName;
     }
 
     public String getPwd() {

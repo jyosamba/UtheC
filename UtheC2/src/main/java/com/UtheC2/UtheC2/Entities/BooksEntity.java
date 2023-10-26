@@ -37,7 +37,7 @@ public class BooksEntity {
     //@JoinColumn(name="publisherID")
     private PublishersEntity publisher;
 
-    @OneToOne
+    @ManyToOne
     @JoinColumn(name="genreID")
     private GenresEntity genre;
 
