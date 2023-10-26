@@ -33,6 +33,9 @@ public class CustomersEntity {
     @Column(name="dob")
     private Date dob;
 
+    @Column(name="basket")
+    private List<BooksEntity> basket;
+
     public int getCustomerID() {
         return customerID;
     }
