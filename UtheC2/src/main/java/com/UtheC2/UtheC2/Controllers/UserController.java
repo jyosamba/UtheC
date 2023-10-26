@@ -1,6 +1,6 @@
 package com.UtheC2.UtheC2.Controllers;
 
-import com.UtheC2.UtheC2.Entities.PublishersEntity;
+import com.UtheC2.UtheC2.Entities.UserEntity;
 import com.UtheC2.UtheC2.repos.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
