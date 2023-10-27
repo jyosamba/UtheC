@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="927029e4-83c3-4d43-b6f2-946ae432fecf" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UtheC2/src/main/java/com/UtheC2/UtheC2/Controllers/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/UtheC2/src/main/java/com/UtheC2/UtheC2/Controllers/BookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UtheC2/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/UtheC2/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +40,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/james/IdeaProjects/QA/UtheC/UtheC2"
+    "last_opened_file_path": "C:/Users/james/Documents/UtheC/UtheC2",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -78,6 +78,8 @@
       <option name="presentableId" value="Default" />
       <updated>1698317848505</updated>
       <workItem from="1698330226648" duration="51000" />
+      <workItem from="1698420910661" duration="24000" />
+      <workItem from="1698420951365" duration="16000" />
     </task>
     <servers />
   </component>
