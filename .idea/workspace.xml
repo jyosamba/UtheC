@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="927029e4-83c3-4d43-b6f2-946ae432fecf" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="52527523-2ab5-4dc4-9f45-e146ea98ca2a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UtheC2/src/main/resources/Frontend/HomePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/UtheC2/src/main/resources/Frontend/HomePage.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,15 +36,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-<<<<<<< HEAD
-    "last_opened_file_path": "C:/Users/User/Documents/lessons/UtheCThymeTrials"
-=======
-    "last_opened_file_path": "C:/Users/james/Documents/UtheC/UtheC2",
-    "vue.rearranger.settings.migration": "true"
->>>>>>> 921f4b6de1ffdd4b1ad21060e54e235528bd8988
+    "git-widget-placeholder": "main"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -80,12 +72,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1698317848505</updated>
-<<<<<<< HEAD
-=======
       <workItem from="1698330226648" duration="51000" />
       <workItem from="1698420910661" duration="24000" />
       <workItem from="1698420951365" duration="16000" />
->>>>>>> 921f4b6de1ffdd4b1ad21060e54e235528bd8988
     </task>
     <servers />
   </component>
