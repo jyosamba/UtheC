@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="927029e4-83c3-4d43-b6f2-946ae432fecf" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,7 +39,12 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
+<<<<<<< HEAD
     "last_opened_file_path": "C:/Users/User/Documents/lessons/UtheCThymeTrials"
+=======
+    "last_opened_file_path": "C:/Users/james/Documents/UtheC/UtheC2",
+    "vue.rearranger.settings.migration": "true"
+>>>>>>> 921f4b6de1ffdd4b1ad21060e54e235528bd8988
   }
 }]]></component>
   <component name="RecentsManager">
@@ -74,6 +80,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1698317848505</updated>
+<<<<<<< HEAD
+=======
+      <workItem from="1698330226648" duration="51000" />
+      <workItem from="1698420910661" duration="24000" />
+      <workItem from="1698420951365" duration="16000" />
+>>>>>>> 921f4b6de1ffdd4b1ad21060e54e235528bd8988
     </task>
     <servers />
   </component>

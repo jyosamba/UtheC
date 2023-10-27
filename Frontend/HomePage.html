@@ -1,83 +1,131 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Under the Covers - Home Page</title>
-        <meta charset="UTF-8">
-        <meta name="description" content="Book e-commerce site, home page.">
-        <meta name="keywords" content="Book, Shop, Buy, Fiction, Novel">
-        <meta name="author" content="The best team">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="stylesheet.css"/>
-        <link rel="script" href="Script.js"/>
-        <script src="https://kit.fontawesome.com/b6bf6586dc.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <!--Header -->
-        <header class="flex-container">
-            <img id="headerLogo" src="Images/logo.png" alt="Full logo" width="200" height="130">
-            <div class="topnav">
-                <input class="searchBar" type="text" placeholder="Search..">
-                <i class="fa fa-search"></i>
-                <a name="#login" href="LoginPage.html"><i id="loginButton" class="fas fa-ghost"></i></a>
-                <a class="active" name="#HomePage" href="HomePage.html"><i class="fas fa-home"></i></a>
-                <a name="#CheckoutPage" href="CheckoutPage.html"><i class="fas fa-shopping-bag"></i></a>
-                <a name="#menu"><i class="fas fa-list-alt"></i></a>
-              </div>
 
-        </header>
+<head>
+    <title>Under the Covers - Home Page</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Book e-commerce site, home page.">
+    <meta name="keywords" content="Book, Shop, Buy, Fiction, Novel">
+    <meta name="author" content="The best team">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="script" href="Script.js" />
+    <script src="https://kit.fontawesome.com/b6bf6586dc.js" crossorigin="anonymous"></script>
+</head>
 
-        <div class="mainBody">
-            <br>
-            <!-- Main Body -->
-            <section id="homeSec1">
-                <div id="homeSecDiv1" class="homeSecDiv">
-                    <div id="homeSecDiv11">
-                        <h1>Book Lucky Dip!</h1>
-                        <p>Click on the button to be taken to a random book. <br> Who knows, your new favourite book could be a mere click away!</p>
-                        <button id="luckydip" onclick="window.location.href='BookPage.html'">Feeling booky?</button>
-                    </div>
-                    <div id="homeSpacer1" class="spacer"></div>
-                    <div>
-                        <img id="wow" src="Images/wow.jpg" alt="wow" width="500" height="300">
-                    </div>
-                </div>
-            </section>
-            <br>
-            <section id="homeSec2">
-                <div id="homeSecDiv2" class="homeSecDiv">
-                    <h1>Recent Releases</h1>
-                    <p>Browse through the novels that are freshly hitting the shelves.</p>
-                    <div class="slideshow">
-                        <img class="newRelease" src="Images/origin.jpg" alt="Origin by Dan Brown" width="150" height="220" onclick="window.location.href='BookPage.html'">
-                        <div class="slideshowSpacer"></div>
-                        <img class="newRelease" src="Images/camino winds.jpg" alt="Camino Winds by John Grisham" width="150" height="220" onclick="window.location.href='BookPage.html'">
-                        <div class="slideshowSpacer"></div>
-                        <img class="newRelease" src="Images/norwegian wood.jpg" alt="Norwegian Wood by Haruki Murakami" width="150" height="220" onclick="window.location.href='BookPage.html'">
-                        <div class="slideshowSpacer"></div>
-                        <img class="newRelease" src="Images/brief answers to the big questions.jpg" alt="Brief Answers To The Big Questions by Stephen Hawking" width="150" height="220" onclick="window.location.href='BookPage.html'">
-                        <div class="slideshowSpacer"></div>
-                        <img class="newRelease" src="Images/fantastic beasts.jpg" alt="Fantastic Beasts by J. K. Rowling" width="150" height="220" onclick="window.location.href='BookPage.html'">
-                    </div>
-                    <div id="slideshowBottomSpacer"></div>
-                </div>
-            </section>
-            <br>
-            <section id="homeSec3">
-                <div id="homeSecDiv3" class="homeSecDiv">
-                    <div id="homeSecDiv31">
-                        <h1>Featured Author: J. R. R. Tolkien</h1>
-                        <p>Tolkien is a leviathon of the fantasy genre, with his classics <em>The Lord of The Rings</em> and <em>The Hobbit</em> being cornerstones of the literary canon. If you love a good dose of adventure, steeped with character development and journeying to virtual worlds then his books are for you.<br> To browse his books click the button.</p>
-                        <button id="luckydip">Go</button>
-                    </div>
-                    <div id="hsd3Spacer"></div>
-                    <img id="hsd3lotr" src="Images/lotr.jpg" alt="Pic of Lord of The Rings Books" width="500" height="300">
-                </div>
-            </section>
-            <br>
+<body>
+    <!--Header -->
+    <header class="flex-container">
+        <img id="headerLogo" src="Images/logo.png" alt="Full logo" width="200" height="130">
+        <div class="topnav">
+            <input class="searchBar" type="text" placeholder="Search..">
+            <i class="fa fa-search"></i>
+            <a name="#login" href="LoginPage.html"><i id="loginButton" class="fas fa-ghost"></i></a>
+            <a class="active" name="#HomePage" href="HomePage.html"><i class="fas fa-home"></i></a>
+            <a name="#CheckoutPage" href="CheckoutPage.html"><i class="fas fa-shopping-bag"></i></a>
+            <a name="#menu"><i class="fas fa-list-alt"></i></a>
         </div>
-        <!-- Footer -->
-        <footer>
 
-        </footer>
-    </body>
+    </header>
+
+    <div class="mainBody">
+        <br>
+        <!-- Main Body -->
+        <section id="homeSec1">
+            <div id="homeSecDiv1" class="homeSecDiv">
+                <div id="homeSecDiv11">
+                    <h1>Book Lucky Dip!</h1>
+                    <p>Click on the button to be taken to a random book. <br> Who knows, your new favourite book could
+                        be a mere click away!</p>
+                    <button id="luckydip" onclick="randomButtonClicked()">Feeling booky?</button>
+                </div>
+                <div id="homeSpacer1" class="spacer"></div>
+                <div>
+                    <img id="wow" src="Images/wow.jpg" alt="wow" width="500" height="300">
+                </div>
+            </div>
+        </section>
+        <br>
+        <section id="homeSec2">
+            <div id="homeSecDiv2" class="homeSecDiv">
+                <h1>Recent Releases</h1>
+                <p>Browse through the novels that are freshly hitting the shelves.</p>
+                <div class="slideshow">
+                    <img class="newRelease" src="Images/origin.jpg" alt="Origin by Dan Brown" width="150" height="220"
+                        onclick="window.location.href='BookPage.html'">
+                    <div class="slideshowSpacer"></div>
+                    <img class="newRelease" src="Images/camino winds.jpg" alt="Camino Winds by John Grisham" width="150"
+                        height="220" onclick="window.location.href='BookPage.html'">
+                    <div class="slideshowSpacer"></div>
+                    <img class="newRelease" src="Images/norwegian wood.jpg" alt="Norwegian Wood by Haruki Murakami"
+                        width="150" height="220" onclick="window.location.href='BookPage.html'">
+                    <div class="slideshowSpacer"></div>
+                    <img class="newRelease" src="Images/brief answers to the big questions.jpg"
+                        alt="Brief Answers To The Big Questions by Stephen Hawking" width="150" height="220"
+                        onclick="window.location.href='BookPage.html'">
+                    <div class="slideshowSpacer"></div>
+                    <img class="newRelease" src="Images/fantastic beasts.jpg" alt="Fantastic Beasts by J. K. Rowling"
+                        width="150" height="220" onclick="window.location.href='BookPage.html'">
+                </div>
+                <div id="slideshowBottomSpacer"></div>
+            </div>
+        </section>
+        <br>
+        <section id="homeSec3">
+            <div id="homeSecDiv3" class="homeSecDiv">
+                <div id="homeSecDiv31">
+                    <h1>Featured Author: J. R. R. Tolkien</h1>
+                    <p>Tolkien is a leviathon of the fantasy genre, with his classics <em>The Lord of The Rings</em> and
+                        <em>The Hobbit</em> being cornerstones of the literary canon. If you love a good dose of
+                        adventure, steeped with character development and journeying to virtual worlds then his books
+                        are for you.<br> To browse his books click the button.
+                    </p>
+                    <button id="luckydip">Go</button>
+                </div>
+                <div id="hsd3Spacer"></div>
+                <img id="hsd3lotr" src="Images/lotr.jpg" alt="Pic of Lord of The Rings Books" width="500" height="300">
+            </div>
+        </section>
+        <br>
+    </div>
+    <!-- Footer -->
+    <footer>
+
+    </footer>
+
+    <script>
+        function getRandomInt(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        function randomButtonClicked() {
+            console.log("button clicked");
+
+            var randomBookID = getRandomInt(1, 90);
+
+            var promise1 = new Promise(function (resolve, reject) {
+                var xhr = new XMLHttpRequest(),
+                    method = "GET",
+                    url = "http://localhost:8080/books/allbooks/" + randomBookID;
+
+                xhr.open(method, url, true);
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState === 4 && xhr.status === 200) {
+                        resolve(JSON.parse(xhr.responseText));
+                    }
+                };
+                xhr.send();
+            });
+
+            promise1.then(function (value) {
+                console.log(value);
+            });
+
+            //window.location.href = "BookPage.html";
+        }
+    </script>
+</body>
+
 </html>
