@@ -75,6 +75,6 @@ jsonData.forEach(item => {
     <img th:src="'Images/' + ${item.title} + '.jpg'" alt="${item.title}" width="300" height="400">
     `;
 
-    authroBooks.appendChild(newDiv);
+    authorBooks.appendChild(newDiv);
 });
 
