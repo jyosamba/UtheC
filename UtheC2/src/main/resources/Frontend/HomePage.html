@@ -9,7 +9,7 @@
     <meta name="author" content="The best team">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css" />
-    <link rel="script" href="Script.js" />
+    <script src="Script.js"></script>
     <script src="https://kit.fontawesome.com/b6bf6586dc.js" crossorigin="anonymous"></script>
 </head>
 
@@ -92,40 +92,6 @@
 <footer>
 
 </footer>
-
-<script>
-    function getRandomInt(min, max) {
-        min = Math.ceil(min);
-        max = Math.floor(max);
-        return Math.floor(Math.random() * (max - min + 1)) + min;
-    }
-
-    function randomButtonClicked() {
-        console.log("button clicked");
-
-        var randomBookID = getRandomInt(1, 90);
-
-        var promise1 = new Promise(function (resolve, reject) {
-            var xhr = new XMLHttpRequest(),
-                method = "GET",
-                url = "http://localhost:8080/books/allbooks/" + randomBookID;
-
-            xhr.open(method, url, true);
-            xhr.onreadystatechange = function () {
-                if (xhr.readyState === 4 && xhr.status === 200) {
-                    resolve(JSON.parse(xhr.responseText));
-                }
-            };
-            xhr.send();
-        });
-
-        promise1.then(function (value) {
-            console.log(value);
-        });
-
-        //window.location.href = "BookPage.html";
-    }
-</script>
 </body>
 
 </html>

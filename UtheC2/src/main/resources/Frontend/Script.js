@@ -1,80 +1,113 @@
 var hardcover = document.getElementById("hardcoverList");
-var jsonData = [
-    {title: "steppenwolf", author: "Hermann Hesse", genre: "Philosophical Fiction"},
-    {title: "fantastic beasts", author: "J. K. Rowling", genre: "Fantasy"},
-    {title: "a brief history of time", author: "Stephen Hawking", genre: "Science"},
-    {title: "the davinci code", author: "Dan Brown", genre: "Mystery"},
-    {title: "kafka on the shore", author: "Haruki Murakami", genre: "Magical Realism"},
-    {title: "neuromancer", author: "William Gibson", genre: "Sci Fi"},
-    {title: "the litigators", author: "John Grisham", genre: "Thriller"},
-    {title: "the fellowship of the ring", author: "J. R. R. Tolkien", genre: "Fantasy"},
-    {title: "the silmarillion", author: "J. R. R. Tolkien", genre: "Fantasy"},
-];
-var genre = "Fantasy";
-const allBooks = document.getElementById("allBooks");
-const genreBooks = document.getElementById("genreBooks");
 
 let data = {
-    "title": "Steppenwolf",
-    "author": "Hermann Hesse",
-    "genre": "Philosophical Fiction",
-    "publisher": "Penguin Modern Classics",
-    "ISBN": "0312278675",
-    "price": "14.00",
-    "secretDeal": "Halloween"
+    "title": "I am a title",
+    "author": "",
+    "genre": "",
+    "isbn": "",
+    "price": "",
 };
 
-function priceWatcher(hardcover){
-    if(hardcover.value == "paperback"){
+function priceWatcher(hardcover) {
+    if (hardcover.value == "paperback") {
         set("price", "11.00");
-        update();
-    }
-    else{
+    } else {
         set("price", "14.00")
-        update();
     }
 };
 
-function set(key, value, updateUI=true){
-	data[ key ] = value;
-	update();	// if updateUI is true then update()
-};
+function set(key, value, updateUI = true) {
+    data[key] = value;
+    if (updateUI) {
+        update();
+    }
+}
 
-function update(){
-	let nodes = document.querySelectorAll('[data]');
-	console.log(nodes);
+function update() {
+    let nodes = document.querySelectorAll('[data]');
+    console.log(nodes);
 
-	for(let i=0; i<nodes.length; i=i+1){
-		console.log( nodes[i].getAttribute("data") );
-		if(data[ nodes[i].getAttribute("data") ] != undefined){
-			let value = data[ nodes[i].getAttribute("data") ];
-			nodes[i].innerText = value;
-			nodes[i].setAttribute("data-type", typeof value);
-		}
-	}
-};
+    for (let i = 0; i < nodes.length; i++) {
+        console.log(nodes[i].getAttribute("data"));
+        if (data[nodes[i].getAttribute("data")] != undefined) {
+            let value = data[nodes[i].getAttribute("data")];
+            nodes[i].innerText = value;
+            nodes[i].setAttribute("data-type", typeof value);
+        }
+    }
+}
 
-update();
+var jsonData;
 
-jsonData.forEach(item => {
-    const newDiv = document.createElement("div");
-    newDiv.innerHTML = `
-        <img th:src="'Images/' + ${item.title} + '.jpg'" alt="${item.title}" width="300" height="400">
-    `;
-    allBooks.appendChild(newDiv);
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
 
-    if(item.genre === genre)
-    newDiv.innerHTML = `
-    <img th:src="'Images/' + ${item.title} + '.jpg'" alt="${item.title}" width="300" height="400">
-    `;
+function randomButtonClicked() {
+    console.log("button clicked");
 
-    genreBooks.appendChild(newDiv);
+    var randomBookID = getRandomInt(1, 90);
 
-    if(item.author === author)
-    newDiv.innerHTML = `
-    <img th:src="'Images/' + ${item.title} + '.jpg'" alt="${item.title}" width="300" height="400">
-    `;
+    var promise1 = new Promise(function (resolve, reject) {
+        var xhr = new XMLHttpRequest(),
+            method = "GET",
+            url = "http://localhost:8080/books/allbooks/" + randomBookID;
+        console.log("through promise half");
 
-    authorBooks.appendChild(newDiv);
-});
+        xhr.open(method, url, true);
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                jsonData = JSON.parse(xhr.responseText);
+                updateDataAndUI(jsonData);
+                window.location.href="BookPage.html";
+                resolve({ responseData: xhr.responseText, jsonData: jsonData });
+            }
+        };
+        xhr.send();
+        console.log("through promise completely");
+    });
+    console.log("Pre promise1");
 
+    promise1.then(function (value) {
+        console.log("Data from the server: " + value.responseData);
+        console.log("ISBN: " + JSON.parse(value.responseData).isbn);
+        console.log("ISBN (2): " + value.responseData[0].isbn);
+        console.log(typeof value.responseData);
+        console.log(typeof value.jsonData);
+        console.log("Data: " + data);
+
+        var myArray = value.responseData.split(",");
+        console.log(typeof myArray);
+        console.log("myArray " + myArray);
+        myArray.forEach(function(item){
+            var settee = item.split(":");
+            if(data[settee[0]] === true){
+                set(settee[0], settee[1]);
+            };
+        });
+        data = myArray;
+        update();
+
+
+
+
+    }).catch(function (error) {
+        console.error("Error: " + error);
+    });
+    console.log("Post promise1");
+
+    promise1.catch(() => {
+        console.log("Error: caught the missing :)");
+    });
+}
+
+function updateDataAndUI(newData) {
+    Object.keys(newData).forEach(function (field) {
+        data[field] = newData[field];
+        console.log("new Data: " + newData);
+    });
+
+    update();
+}
