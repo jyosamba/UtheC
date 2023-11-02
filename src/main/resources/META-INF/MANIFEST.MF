@@ -1,0 +1,42 @@
+Manifest-Version: 1.0
+Main-Class: 
+Class-Path: jackson-annotations-2.15.3.jar spring-boot-starter-data-jpa-
+ 3.1.5.jar spring-boot-starter-aop-3.1.5.jar HikariCP-5.0.1.jar jsonasse
+ rt-1.5.1.jar junit-jupiter-engine-5.9.3.jar jakarta.inject-api-2.0.1.ja
+ r tomcat-embed-core-10.1.15.jar jaxb-api-2.3.0.jar junit-jupiter-params
+ -5.9.3.jar hibernate-core-6.2.13.Final.jar junit-jupiter-api-5.9.3.jar 
+ antlr4-runtime-4.10.1.jar thymeleaf-spring6-3.1.2.RELEASE.jar byte-budd
+ y-agent-1.14.9.jar javax.persistence-api-2.2.jar spring-boot-starter-we
+ b-3.1.5.jar spring-context-6.0.13.jar angus-activation-2.0.1.jar spring
+ -data-jpa-3.1.5.jar micrometer-commons-1.11.5.jar mockito-junit-jupiter
+ -5.3.1.jar jackson-datatype-jdk8-2.15.3.jar asm-9.3.jar hibernate-commo
+ ns-annotations-6.0.6.Final.jar spring-boot-starter-tomcat-3.1.5.jar unb
+ escape-1.1.6.RELEASE.jar junit-platform-engine-1.9.3.jar classmate-1.5.
+ 1.jar txw2-4.0.3.jar aspectjweaver-1.9.20.jar snakeyaml-1.33.jar spring
+ -boot-3.1.5.jar log4j-to-slf4j-2.20.0.jar jandex-3.0.5.jar spring-aop-6
+ .0.13.jar jaxb-core-4.0.3.jar spring-web-6.0.13.jar spring-test-6.0.13.
+ jar accessors-smart-2.4.11.jar apiguardian-api-1.1.2.jar spring-jdbc-6.
+ 0.13.jar jakarta.xml.bind-api-4.0.1.jar micrometer-observation-1.11.5.j
+ ar jul-to-slf4j-2.0.9.jar spring-boot-starter-logging-3.1.5.jar mysql-c
+ onnector-j-8.0.33.jar hibernate-validator-4.2.0.Final.jar log4j-api-2.2
+ 0.0.jar json-smart-2.4.11.jar junit-platform-commons-1.9.3.jar spring-b
+ oot-starter-test-3.1.5.jar spring-jcl-6.0.13.jar jakarta.annotation-api
+ -2.1.1.jar spring-boot-starter-json-3.1.5.jar jboss-logging-3.5.3.Final
+ .jar spring-orm-6.0.13.jar objenesis-3.3.jar spring-webmvc-6.0.13.jar j
+ ackson-module-parameter-names-2.15.3.jar json-path-2.8.0.jar thymeleaf-
+ 3.1.2.RELEASE.jar spring-boot-test-3.1.5.jar spring-data-commons-3.1.5.
+ jar spring-core-6.0.13.jar tomcat-embed-websocket-10.1.15.jar spring-bo
+ ot-autoconfigure-3.1.5.jar spring-expression-6.0.13.jar android-json-0.
+ 0.20131108.vaadin1.jar byte-buddy-1.14.9.jar jakarta.persistence-api-3.
+ 1.0.jar jackson-databind-2.15.3.jar xmlunit-core-2.9.1.jar assertj-core
+ -3.24.2.jar hamcrest-2.2.jar spring-aspects-6.0.13.jar tomcat-embed-el-
+ 10.1.15.jar spring-boot-starter-thymeleaf-3.1.5.jar spring-boot-starter
+ -jdbc-3.1.5.jar jackson-core-2.15.3.jar opentest4j-1.2.0.jar logback-co
+ re-1.4.11.jar jaxb-runtime-4.0.3.jar junit-jupiter-5.9.3.jar attoparser
+ -2.0.7.RELEASE.jar spring-tx-6.0.13.jar spring-beans-6.0.13.jar jakarta
+ .transaction-api-2.0.1.jar logback-classic-1.4.11.jar jackson-datatype-
+ jsr310-2.15.3.jar slf4j-api-2.0.9.jar spring-boot-starter-3.1.5.jar spr
+ ing-boot-test-autoconfigure-3.1.5.jar jakarta.activation-api-2.1.2.jar 
+ mockito-core-5.3.1.jar validation-api-1.0.0.GA.jar istack-commons-runti
+ me-4.1.2.jar
+

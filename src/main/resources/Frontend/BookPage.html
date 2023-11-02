@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="english">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Book e-commerce site, individual book page.">
+        <meta name="keywords" content="Book, Shop, Buy, Fiction, Novel">
+        <meta name="author" content="The best team">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stylesheet.css"/>
+        <script src="Script.js" defer></script>
+        <script src="https://kit.fontawesome.com/b6bf6586dc.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!--Header -->
+        <header class="flex-container">
+            <img id="headerLogo" src="Images/logo.png" alt="Full logo" width="200" height="130">
+            <div class="topnav">
+                <input class="searchBar" type="text" placeholder="Search..">
+                <i class="fa fa-search"></i>
+                <a name="#login" href="LoginPage.html"><i id="loginButton" class="fas fa-ghost"></i></a>
+                <a class="active" name="#HomePage" href="HomePage.html"><i class="fas fa-home"></i></a>
+                <a name="#CheckoutPage" href="CheckoutPage.html"><i class="fas fa-shopping-bag"></i></a>
+                <a name="#menu"><i class="fas fa-list-alt"></i></a>
+              </div>
+
+        </header>
+        <br>
+        <!-- Main Body -->
+        <div class="mainBody">
+            <div class="singleBook">
+                <div>
+                    <!-- ask Joseph how to have the image path as a variable -->
+                    <img th:src="@{'/Images/' + ${data.title} + '.jpg'}"alt="Product Image" width="500" height="630">
+                </div>
+                <div class="singleBookSpacer"></div>
+                <div class="singleBookContent">
+                    <!--<h1>Special Offer: <span data="secretDeal"></span></h1>-->
+                    <h1><span data-title></span> by <span th:text="${data.author}"></span></h1>
+                    <h3>Genre: <span th:text="${data.genre}"></span></h3>
+                    <h3>Publisher: <span th:text="${data.publisher}"></span></h3>
+                    <h3>ISBN number: <span th:text="${data.isbn}"></span></h3>
+                    <h3>Price: £<span th:text="${data.price}"></span></h3>
+                    <br>
+                    <select name="hardcoverList" id="hardback" onclick="priceWatcher(event.target.value)">
+                        <option value="hardcover">Hardback</option>
+                        <option value="paperback">Paperback</option>
+                    </select>
+                    <button id="addToCart">Add To Cart</button>
+                    <h3><em>User Review</em></h3>
+                    <p>From the very first page, <span th:text="${data.author}"></span>'s novel, <span th:text="${data.title}"></span>, whisks readers away on a mesmerizing literary adventure that is impossible to put down. This masterpiece has all the ingredients that make it an absolute must-read, and it's nothing short of extraordinary.
+
+                        The storytelling prowess of <span th:text="${data.author}"></span> is unparalleled, crafting a world so vivid, so immersive, that you can almost taste the air and feel the pulse of the characters' hearts. The prose is exquisitely lyrical, painting vivid pictures with words and evoking a wide spectrum of emotions. The narrative flows seamlessly, effortlessly transporting readers into a realm where every page promises the unexpected.
+                        
+                        The characters in <span th:text="${data.title}"></span> are brilliantly conceived, each with their unique quirks and vulnerabilities. You can't help but become emotionally invested in their journeys, as <span th:text="${data.author}"></span> masterfully navigates the intricacies of human nature and relationships. Whether it's the relatable protagonist or the enigmatic supporting cast, they leap off the page, becoming your friends and confidants.
+                        
+                        The plot, woven with finesse, is a tapestry of surprises and revelations. The suspense and tension are skillfully maintained, keeping you on the edge of your seat, turning page after page long into the night. It's a gripping, heart-pounding rollercoaster ride that you won't want to end.
+                        
+                        <span th:text="${data.author}"></span> brilliantly explores universal themes, effortlessly weaving them into the fabric of the story. Love, loss, redemption, and the human spirit are all thoughtfully examined. It's a testament to <span th:text="${data.author}"></span>'s ability to not only entertain but to inspire deep contemplation and introspection.
+                        
+                        In <span th:text="${data.title}"></span>, <span th:text="${data.author}"></span> has delivered a true masterpiece, a book that transcends its genre and speaks to the human condition. It's a journey you'll savor long after you've turned the final page, leaving you yearning for more. This is a book that will undoubtedly leave an indelible mark on your soul, and I wholeheartedly recommend it to anyone seeking a literary escape that is at once captivating, thought-provoking, and profoundly moving. <span th:text="${data.title}"></span> is, quite simply, a triumph of literature.
+                    </p>   
+                </div>
+
+            </div>
+        </div>
+        <br>
+        <!-- Footer -->
+        <footer>
+
+        </footer>
+        
+    </body>
+</html>
