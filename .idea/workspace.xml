@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="52527523-2ab5-4dc4-9f45-e146ea98ca2a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/UtheC_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UtheC2/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UtheC2/src/main/resources/Frontend/BookPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/UtheC2/src/main/resources/Frontend/BookPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UtheC2/src/main/resources/Frontend/HomePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/UtheC2/src/main/resources/Frontend/HomePage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UtheC2/src/main/resources/Frontend/Script.js" beforeDir="false" afterPath="$PROJECT_DIR$/UtheC2/src/main/resources/Frontend/Script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,8 +39,12 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/User/Documents/lessons/UtheC"
+    "last_opened_file_path": "C:/Users/User/Documents/lessons/UtheC",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
   <component name="RecentsManager">
